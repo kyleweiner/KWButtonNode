@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		279CF4461AF15C4700C64B1A /* KWButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279CF4451AF15C4700C64B1A /* KWButtonNode.swift */; };
+		27CE002D1AE2E38200077434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE002C1AE2E38200077434 /* AppDelegate.swift */; };
+		27CE00361AE2E38200077434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CE00341AE2E38200077434 /* Main.storyboard */; };
+		27CE00381AE2E38200077434 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CE00371AE2E38200077434 /* Images.xcassets */; };
+		27CE003B1AE2E38200077434 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27CE00391AE2E38200077434 /* LaunchScreen.xib */; };
+		27CE00471AE2E38200077434 /* KWButtonNodeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE00461AE2E38200077434 /* KWButtonNodeDemoTests.swift */; };
+		27CE005B1AE2E4BD00077434 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE00571AE2E4BD00077434 /* GameViewController.swift */; };
+		27CE005C1AE2E4BD00077434 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27CE00591AE2E4BD00077434 /* GameScene.sks */; };
+		27CE005D1AE2E4BD00077434 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE005A1AE2E4BD00077434 /* GameScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27CE00411AE2E38200077434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27CE001F1AE2E38200077434 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27CE00261AE2E38200077434;
+			remoteInfo = KWButtonNodeDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		279CF4451AF15C4700C64B1A /* KWButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KWButtonNode.swift; sourceTree = "<group>"; };
+		27CE00271AE2E38200077434 /* KWButtonNodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KWButtonNodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CE002B1AE2E38200077434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27CE002C1AE2E38200077434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27CE00351AE2E38200077434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27CE00371AE2E38200077434 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27CE003A1AE2E38200077434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		27CE00401AE2E38200077434 /* KWButtonNodeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KWButtonNodeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CE00451AE2E38200077434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27CE00461AE2E38200077434 /* KWButtonNodeDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KWButtonNodeDemoTests.swift; sourceTree = "<group>"; };
+		27CE00571AE2E4BD00077434 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		27CE00591AE2E4BD00077434 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		27CE005A1AE2E4BD00077434 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27CE00241AE2E38200077434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27CE003D1AE2E38200077434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		279CF4441AF15C4700C64B1A /* KWButtonNode */ = {
+			isa = PBXGroup;
+			children = (
+				279CF4451AF15C4700C64B1A /* KWButtonNode.swift */,
+			);
+			path = KWButtonNode;
+			sourceTree = "<group>";
+		};
+		27CE001E1AE2E38200077434 = {
+			isa = PBXGroup;
+			children = (
+				27CE00291AE2E38200077434 /* KWButtonNodeDemo */,
+				27CE00431AE2E38200077434 /* KWButtonNodeDemoTests */,
+				27CE00281AE2E38200077434 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27CE00281AE2E38200077434 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27CE00271AE2E38200077434 /* KWButtonNodeDemo.app */,
+				27CE00401AE2E38200077434 /* KWButtonNodeDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27CE00291AE2E38200077434 /* KWButtonNodeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				279CF4441AF15C4700C64B1A /* KWButtonNode */,
+				27CE00541AE2E43900077434 /* Resources */,
+				27CE00561AE2E4BD00077434 /* Controllers */,
+				27CE00581AE2E4BD00077434 /* Scenes */,
+				27CE002A1AE2E38200077434 /* Supporting Files */,
+			);
+			path = KWButtonNodeDemo;
+			sourceTree = "<group>";
+		};
+		27CE002A1AE2E38200077434 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27CE002C1AE2E38200077434 /* AppDelegate.swift */,
+				27CE002B1AE2E38200077434 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27CE00431AE2E38200077434 /* KWButtonNodeDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				27CE00461AE2E38200077434 /* KWButtonNodeDemoTests.swift */,
+				27CE00441AE2E38200077434 /* Supporting Files */,
+			);
+			path = KWButtonNodeDemoTests;
+			sourceTree = "<group>";
+		};
+		27CE00441AE2E38200077434 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27CE00451AE2E38200077434 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27CE00541AE2E43900077434 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27CE00391AE2E38200077434 /* LaunchScreen.xib */,
+				27CE00341AE2E38200077434 /* Main.storyboard */,
+				27CE00371AE2E38200077434 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		27CE00561AE2E4BD00077434 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				27CE00571AE2E4BD00077434 /* GameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		27CE00581AE2E4BD00077434 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				27CE00591AE2E4BD00077434 /* GameScene.sks */,
+				27CE005A1AE2E4BD00077434 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27CE00261AE2E38200077434 /* KWButtonNodeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27CE004A1AE2E38200077434 /* Build configuration list for PBXNativeTarget "KWButtonNodeDemo" */;
+			buildPhases = (
+				27CE00231AE2E38200077434 /* Sources */,
+				27CE00241AE2E38200077434 /* Frameworks */,
+				27CE00251AE2E38200077434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KWButtonNodeDemo;
+			productName = KWButtonNodeDemo;
+			productReference = 27CE00271AE2E38200077434 /* KWButtonNodeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27CE003F1AE2E38200077434 /* KWButtonNodeDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27CE004D1AE2E38200077434 /* Build configuration list for PBXNativeTarget "KWButtonNodeDemoTests" */;
+			buildPhases = (
+				27CE003C1AE2E38200077434 /* Sources */,
+				27CE003D1AE2E38200077434 /* Frameworks */,
+				27CE003E1AE2E38200077434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27CE00421AE2E38200077434 /* PBXTargetDependency */,
+			);
+			name = KWButtonNodeDemoTests;
+			productName = KWButtonNodeDemoTests;
+			productReference = 27CE00401AE2E38200077434 /* KWButtonNodeDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27CE001F1AE2E38200077434 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Kyle Weiner";
+				TargetAttributes = {
+					27CE00261AE2E38200077434 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					27CE003F1AE2E38200077434 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 27CE00261AE2E38200077434;
+					};
+				};
+			};
+			buildConfigurationList = 27CE00221AE2E38200077434 /* Build configuration list for PBXProject "KWButtonNodeDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27CE001E1AE2E38200077434;
+			productRefGroup = 27CE00281AE2E38200077434 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27CE00261AE2E38200077434 /* KWButtonNodeDemo */,
+				27CE003F1AE2E38200077434 /* KWButtonNodeDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27CE00251AE2E38200077434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CE005C1AE2E4BD00077434 /* GameScene.sks in Resources */,
+				27CE003B1AE2E38200077434 /* LaunchScreen.xib in Resources */,
+				27CE00381AE2E38200077434 /* Images.xcassets in Resources */,
+				27CE00361AE2E38200077434 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27CE003E1AE2E38200077434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27CE00231AE2E38200077434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CE005D1AE2E4BD00077434 /* GameScene.swift in Sources */,
+				279CF4461AF15C4700C64B1A /* KWButtonNode.swift in Sources */,
+				27CE005B1AE2E4BD00077434 /* GameViewController.swift in Sources */,
+				27CE002D1AE2E38200077434 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27CE003C1AE2E38200077434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CE00471AE2E38200077434 /* KWButtonNodeDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27CE00421AE2E38200077434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27CE00261AE2E38200077434 /* KWButtonNodeDemo */;
+			targetProxy = 27CE00411AE2E38200077434 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27CE00341AE2E38200077434 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27CE00351AE2E38200077434 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27CE00391AE2E38200077434 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27CE003A1AE2E38200077434 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27CE00481AE2E38200077434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27CE00491AE2E38200077434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27CE004B1AE2E38200077434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KWButtonNodeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		27CE004C1AE2E38200077434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KWButtonNodeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		27CE004E1AE2E38200077434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KWButtonNodeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KWButtonNodeDemo.app/KWButtonNodeDemo";
+			};
+			name = Debug;
+		};
+		27CE004F1AE2E38200077434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KWButtonNodeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KWButtonNodeDemo.app/KWButtonNodeDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27CE00221AE2E38200077434 /* Build configuration list for PBXProject "KWButtonNodeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27CE00481AE2E38200077434 /* Debug */,
+				27CE00491AE2E38200077434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27CE004A1AE2E38200077434 /* Build configuration list for PBXNativeTarget "KWButtonNodeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27CE004B1AE2E38200077434 /* Debug */,
+				27CE004C1AE2E38200077434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27CE004D1AE2E38200077434 /* Build configuration list for PBXNativeTarget "KWButtonNodeDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27CE004E1AE2E38200077434 /* Debug */,
+				27CE004F1AE2E38200077434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27CE001F1AE2E38200077434 /* Project object */;
+}
