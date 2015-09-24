@@ -8,7 +8,6 @@ import SpriteKit
 class GameScene: SKScene {
 
     override func didMoveToView(view: SKView) {
-        addBackground()
         addButton()
     }
 
@@ -19,28 +18,20 @@ class GameScene: SKScene {
             disabledImageNamed: "Button Play Disabled"
         )
 
-        //buttonNode.enabled = false
         button.position = CGPointMake(frame.width/2, frame.height/2)
-        addChild(button)
+        self.addChild(button)
 
         button.touchDownHandler = {
-            println("touchDownHandler handler called.")
+            print("touchDownHandler handler called.")
         }
 
         button.touchUpInsideHandler = {
-            println("touchUpInsideHandler handler called.")
+            print("touchUpInsideHandler handler called.")
         }
 
         button.touchUpHandler = {
-            println("touchUpHandler handler called.")
+            print("touchUpHandler handler called.")
         }
-    }
-
-    func addBackground() {
-        let background = SKSpriteNode(imageNamed: "Background")
-        background.anchorPoint = CGPointMake(0, 0)
-        background.blendMode = .Replace
-        addChild(background)
     }
 
 }

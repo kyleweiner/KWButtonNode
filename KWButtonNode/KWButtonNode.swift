@@ -43,7 +43,7 @@ class KWButtonNode: SKSpriteNode {
             self.disabledTexture = SKTexture(imageNamed: name)
         }
 
-        super.init(texture: self.defaultTexture, color: .clearColor(), size: self.defaultTexture.size())
+        super.init(texture: self.defaultTexture, color: .whiteColor(), size: self.defaultTexture.size())
 
         userInteractionEnabled = true
     }
@@ -54,7 +54,7 @@ class KWButtonNode: SKSpriteNode {
 
     // MARK: - User Interaction
 
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if !enabled {
             return
         }
@@ -64,25 +64,27 @@ class KWButtonNode: SKSpriteNode {
         touchDownHandler?()
     }
 
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if !enabled {
             return
         }
 
-        let touch = touches.first as! UITouch
-        selected = CGRectContainsPoint(frame, touch.locationInNode(parent)) ? true : false
+        if let touch = touches.first {
+            selected = CGRectContainsPoint(frame, touch.locationInNode(parent!)) ? true : false
+        }
     }
 
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if !enabled {
             return
         }
 
         selected = false
 
-        let touch = touches.first as! UITouch
-        if CGRectContainsPoint(frame, touch.locationInNode(parent)) {
-            touchUpInsideHandler?()
+        if let touch = touches.first {
+            if CGRectContainsPoint(frame, touch.locationInNode(parent!)) {
+                touchUpInsideHandler?()
+            }
         }
         
         touchUpHandler?()
