@@ -22,7 +22,9 @@ class KWButtonNode: SKSpriteNode {
 
     var selected = false {
         didSet {
-            texture = selected ? selectedTexture : defaultTexture
+            if selectedTexture != nil {
+                texture = selected ? selectedTexture : defaultTexture
+            }
         }
     }
 
@@ -32,30 +34,30 @@ class KWButtonNode: SKSpriteNode {
 
     // MARK: - Lifecycle
 
-    init(imageNamed: String, selectedImageNamed: String?, disabledImageNamed: String?) {
-        self.defaultTexture = SKTexture(imageNamed: imageNamed)
+    init(imageNamed: String, selectedImageNamed: String? = nil, disabledImageNamed: String? = nil) {
+        defaultTexture = SKTexture(imageNamed: imageNamed)
 
-        if let name = selectedImageNamed {
-            self.selectedTexture = SKTexture(imageNamed: name)
+        if selectedImageNamed != nil {
+            selectedTexture = SKTexture(imageNamed: selectedImageNamed!)
         }
 
-        if let name = disabledImageNamed {
-            self.disabledTexture = SKTexture(imageNamed: name)
+        if disabledImageNamed != nil {
+            disabledTexture = SKTexture(imageNamed: disabledImageNamed!)
         }
 
-        super.init(texture: self.defaultTexture, color: .whiteColor(), size: self.defaultTexture.size())
+        super.init(texture: defaultTexture, color: .clearColor(), size: defaultTexture.size())
 
         userInteractionEnabled = true
     }
 
-    required init(coder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("NSCoding not supported")
     }
 
     // MARK: - User Interaction
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if !enabled {
+        guard enabled else {
             return
         }
 
@@ -65,17 +67,17 @@ class KWButtonNode: SKSpriteNode {
     }
 
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if !enabled {
+        guard enabled else {
             return
         }
 
         if let touch = touches.first {
-            selected = CGRectContainsPoint(frame, touch.locationInNode(parent!)) ? true : false
+            selected = CGRectContainsPoint(frame, touch.locationInNode(parent!))
         }
     }
 
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if !enabled {
+        guard enabled else {
             return
         }
 
