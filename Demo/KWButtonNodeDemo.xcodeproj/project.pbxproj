@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		279CF4461AF15C4700C64B1A /* KWButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279CF4451AF15C4700C64B1A /* KWButtonNode.swift */; };
+		27A8510C1BB51E7C00AE3108 /* KWButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A8510B1BB51E7C00AE3108 /* KWButtonNode.swift */; settings = {ASSET_TAGS = (); }; };
 		27CE002D1AE2E38200077434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE002C1AE2E38200077434 /* AppDelegate.swift */; };
 		27CE00361AE2E38200077434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CE00341AE2E38200077434 /* Main.storyboard */; };
 		27CE00381AE2E38200077434 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CE00371AE2E38200077434 /* Images.xcassets */; };
@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		279CF4451AF15C4700C64B1A /* KWButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KWButtonNode.swift; sourceTree = "<group>"; };
+		27A8510B1BB51E7C00AE3108 /* KWButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KWButtonNode.swift; sourceTree = "<group>"; };
 		27CE00271AE2E38200077434 /* KWButtonNodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KWButtonNodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CE002B1AE2E38200077434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27CE002C1AE2E38200077434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,10 +62,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		279CF4441AF15C4700C64B1A /* KWButtonNode */ = {
+		27A8510A1BB51E7C00AE3108 /* KWButtonNode */ = {
 			isa = PBXGroup;
 			children = (
-				279CF4451AF15C4700C64B1A /* KWButtonNode.swift */,
+				27A8510B1BB51E7C00AE3108 /* KWButtonNode.swift */,
 			);
 			path = KWButtonNode;
 			sourceTree = "<group>";
@@ -91,7 +91,7 @@
 		27CE00291AE2E38200077434 /* KWButtonNodeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				279CF4441AF15C4700C64B1A /* KWButtonNode */,
+				27A8510A1BB51E7C00AE3108 /* KWButtonNode */,
 				27CE00541AE2E43900077434 /* Resources */,
 				27CE00561AE2E4BD00077434 /* Controllers */,
 				27CE00581AE2E4BD00077434 /* Scenes */,
@@ -256,7 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27CE005D1AE2E4BD00077434 /* GameScene.swift in Sources */,
-				279CF4461AF15C4700C64B1A /* KWButtonNode.swift in Sources */,
+				27A8510C1BB51E7C00AE3108 /* KWButtonNode.swift in Sources */,
 				27CE005B1AE2E4BD00077434 /* GameViewController.swift in Sources */,
 				27CE002D1AE2E38200077434 /* AppDelegate.swift in Sources */,
 			);

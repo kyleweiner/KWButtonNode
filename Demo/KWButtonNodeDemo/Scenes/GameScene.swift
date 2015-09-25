@@ -19,7 +19,7 @@ class GameScene: SKScene {
         )
 
         button.position = CGPointMake(frame.width/2, frame.height/2)
-        self.addChild(button)
+        addChild(button)
 
         button.touchDownHandler = {
             print("touchDownHandler handler called.")

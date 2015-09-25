@@ -22,7 +22,9 @@ class KWButtonNode: SKSpriteNode {
 
     var selected = false {
         didSet {
-            texture = selected ? selectedTexture : defaultTexture
+            if selectedTexture != nil {
+                texture = selected ? selectedTexture : defaultTexture
+            }
         }
     }
 
@@ -32,7 +34,7 @@ class KWButtonNode: SKSpriteNode {
 
     // MARK: - Lifecycle
 
-    init(imageNamed: String, selectedImageNamed: String?, disabledImageNamed: String?) {
+    init(imageNamed: String, selectedImageNamed: String? = nil, disabledImageNamed: String? = nil) {
         defaultTexture = SKTexture(imageNamed: imageNamed)
 
         if selectedImageNamed != nil {
