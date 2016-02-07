@@ -23,15 +23,23 @@ let buttonNode = KWButtonNode(
 KWButtonNode uses closures for handling touch events.
 
 ```swift
-buttonNode.touchDownHandler = {
+buttonNode.touchDownHandler = { button in
     // ...
 }
 
-buttonNode.touchUpInsideHandler = {
+buttonNode.touchUpHandler = { button in
     // ...
 }
 
-buttonNode.touchUpHandler = {
+buttonNode.touchUpInsideHandler = { button in
+    // ...
+}
+
+buttonNode.touchesMovedHandler = { button in
+    // ...
+}
+
+buttonNode.touchesCancelledHandler = { button in
     // ...
 }
 ``` 
