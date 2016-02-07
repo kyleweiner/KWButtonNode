@@ -21,15 +21,15 @@ class GameScene: SKScene {
         button.position = CGPointMake(frame.width/2, frame.height/2)
         addChild(button)
 
-        button.touchDownHandler = {
+        button.touchDownHandler = { button in
             print("touchDownHandler handler called.")
         }
 
-        button.touchUpInsideHandler = {
+        button.touchUpInsideHandler = { button in
             print("touchUpInsideHandler handler called.")
         }
 
-        button.touchUpHandler = {
+        button.touchUpHandler = { button in
             print("touchUpHandler handler called.")
         }
     }
