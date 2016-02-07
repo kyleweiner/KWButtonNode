@@ -12,11 +12,24 @@ Simply copy the files in the `KWButtonNode` directory into your project.
 
 Try the demo!
 
+1. Using the Media library, drag the default image for the button to the scene.
+2. Set its name (e.g. "button") in the Attributes inspector.
+3. Set its custom class to `KWButtonNode` in the Custom Class inspector.
+4. In the corresponding `SKScene` class file:
+
+```swift
+let button = childNodeWithName("button") as! KWButtonNode
+button.selectedTexture = SKTexture(imageNamed: "button_play_selected")
+button.disabledTexture = SKTexture(imageNamed: "button_play_disabled")
+```
+
+Or, simply instantiate the button in code:
+
 ```swift
 let buttonNode = KWButtonNode(
-    imageNamed: "Button",
-    selectedImageNamed:"Button Selected",
-    disabledImageNamed: "Button Disabled"
+    imageNamed: "button",
+    selectedImageNamed:"button_selected",
+    disabledImageNamed: "button_disabled"
 )
 ```
 
