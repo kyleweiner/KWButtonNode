@@ -7,7 +7,6 @@ import UIKit
 import SpriteKit
 
 class GameViewController: UIViewController {
-
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
@@ -15,22 +14,20 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let scene = GameScene(fileNamed:"GameScene") {
+        let skview = view as! SKView
+        skview.ignoresSiblingOrder = true
+        skview.multipleTouchEnabled = true
+
+        if let scene = GameScene(fileNamed: "GameScene") {
             scene.scaleMode = .AspectFill
             scene.blendMode = .Replace
-
-            let skView = view as! SKView
-
-            #if DEBUG
-                skView.showsFPS = true
-                skView.showsDrawCount = true
-                skView.showsNodeCount = true
-                skView.showsPhysics = true
-            #endif
-
-            skView.ignoresSiblingOrder = true
-            skView.presentScene(scene)
+            skview.presentScene(scene)
         }
+
+        #if DEBUG
+            skview.showsFPS = true
+            skview.showsDrawCount = true
+            skview.showsNodeCount = true
+        #endif
     }
-    
 }

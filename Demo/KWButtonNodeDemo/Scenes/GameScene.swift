@@ -6,20 +6,14 @@
 import SpriteKit
 
 class GameScene: SKScene {
-
     override func didMoveToView(view: SKView) {
-        addButton()
+        configureButton()
     }
 
-    func addButton() {
-        let button = KWButtonNode(
-            imageNamed: "Button Play",
-            selectedImageNamed:"Button Play Selected",
-            disabledImageNamed: "Button Play Disabled"
-        )
-
-        button.position = CGPointMake(frame.width/2, frame.height/2)
-        addChild(button)
+    func configureButton() {
+        let button = childNodeWithName("world/button") as! KWButtonNode
+        button.selectedTexture = SKTexture(imageNamed: "button_play_selected")
+        button.disabledTexture = SKTexture(imageNamed: "button_play_disabled")
 
         button.touchDownHandler = { button in
             print("touchDownHandler handler called.")
@@ -33,5 +27,4 @@ class GameScene: SKScene {
             print("touchUpHandler handler called.")
         }
     }
-
 }
